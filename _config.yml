@@ -73,6 +73,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+##theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,3 +81,4 @@ deploy:
   type: git
   repo: https://github.com/bengben/bengben.github.io.git
   branch: master
+  message: 
