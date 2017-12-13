@@ -110,9 +110,9 @@ sidebar:
 #     class: open-algolia-search
 header:
     right_link:
-        url: /#about
-        icon:
-        class:
+        url: /#search
+        icon: search
+        class: open-algolia-search
 
 
 # ------
@@ -121,13 +121,13 @@ header:
 
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
-    location:
+    email: bengben@Hotmail.com
+    location: chongqing,china
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
+    picture: http://ov4nwwjdl.bkt.clouddn.com/17-12-7/51108578.jpg
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your personal google plus profile id, not your blog or business page id.
@@ -183,7 +183,7 @@ favicon:
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
 archive_pagination: true
-category_pagination: true
+category_pagination: false
 tag_pagination: true
 
 # ---------------
@@ -230,28 +230,28 @@ fb_app_id:
 # If you wanna add a sharing option, read user documentation :
 # Tranquilpeak configuration > Theme configuration > sharing-options
 sharing_options:
-    facebook:
-        icon: "fa-facebook-official"
-        url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
-    twitter:
-        icon: "fa-twitter"
-        url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
-    google_plus:
-        icon: "fa-google-plus"
-        url: "https://plus.google.com/share?url={{post.permalink}}"
+    # facebook:
+    #   icon: "fa-facebook-official"
+    #   url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
+    # twitter:
+    #   icon: "fa-twitter"
+    #   url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
+    # google_plus:
+    #   icon: "fa-google-plus"
+    #   url: "https://plus.google.com/share?url={{post.permalink}}"
     # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
-    # qq:
-    #     title: "QQ"
-    #     icon: "fa-qq"
-    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
-    # qzone:
-    #     title: "Qzone"
-    #     icon: "fa-star"
-    #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
+    weibo:
+        title: "Weibo"
+        icon: "fa-weibo"
+        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    qq:
+        title: "QQ"
+        icon: "fa-qq"
+        url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
+    qzone:
+        title: "Qzone"
+        icon: "fa-star"
+        url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
     # renren:
     #     title: "Renren"
     #     icon: "fa-renren"

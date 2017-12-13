@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -74,6 +74,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 ##theme: icarus
+##theme: tranquilpeak
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,3 +83,10 @@ deploy:
   repo: https://github.com/bengben/bengben.github.io.git
   branch: master
   message: 
+
+
+# feed
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
