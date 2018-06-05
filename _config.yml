@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: QinQin&BengBen
+title: Q&B,Q+B
 subtitle: Our Times！Our House！
 description: QinQin & BengBen
 author: bengben
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as a'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://bengben.github.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
