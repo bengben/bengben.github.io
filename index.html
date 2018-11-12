@@ -1,1522 +1,725 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
-
-
-
-
-
-
-<meta name="description" content="QinQin &amp; BengBen">
-<meta property="og:type" content="website">
-<meta property="og:title" content="QinQin&amp;BengBen">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="QinQin&amp;BengBen">
-<meta property="og:description" content="QinQin &amp; BengBen">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QinQin&amp;BengBen">
-<meta name="twitter:description" content="QinQin &amp; BengBen">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title>QinQin&BengBen</title>
-  
-
-
-
-
-
-
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Dashboard Template for Bootstrap</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/bootstrap-slider.min.css" rel="stylesheet">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">QinQin&BengBen</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle">Our Times！Our House！</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/07/年终总结套路＂/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bengben">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QinQin&BengBen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/07/年终总结套路＂/" itemprop="url">年终总结套路</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T10:30:41+08:00">
-                2018-02-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/总结/" itemprop="url" rel="index">
-                    <span itemprop="name">总结</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p><strong>年终总结套路</strong></p>
-</blockquote>
-<p>今年到新公司4个月左右，又要面临这部门与个人总结，先磨刀把。总结了知乎的高赞回答，主要有以下几点：</p>
-<h3 id="KPI分析"><a href="#KPI分析" class="headerlink" title="KPI分析"></a>KPI分析</h3><p>KPI就是关键绩效指标法，每个员工或管理者，都得知道自己的KPI,就是自己工作岗位中关键的指标，也就是直接考核自己的目标值，是饭碗的保障，奖金的来源。比如，我们联想服务有P、Q1、Q2、Q3、Q4、Q5等，销售有PR100，进货额等，这都是我们的关键指标。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/07/年终总结套路＂/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/26/小程序页面路由/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bengben">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QinQin&BengBen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/26/小程序页面路由/" itemprop="url">小程序页面路由</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T14:45:58+08:00">
-                2018-01-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/小程序/" itemprop="url" rel="index">
-                    <span itemprop="name">小程序</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p><strong>小程序页面路由注意事项?</strong></p>
-</blockquote>
-<h3 id="首先要明白-open-type-的几种方式"><a href="#首先要明白-open-type-的几种方式" class="headerlink" title="首先要明白 open-type 的几种方式"></a>首先要明白 <code>open-type</code> 的几种方式</h3><h4 id="open-type-有效值："><a href="#open-type-有效值：" class="headerlink" title="open-type 有效值："></a>open-type 有效值：</h4><table>
-<thead>
-<tr>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>navigate</td>
-<td>对应 wx.navigateTo 的功能</td>
-</tr>
-<tr>
-<td>redirect</td>
-<td>对应 wx.redirectTo 的功能</td>
-</tr>
-<tr>
-<td>switchTab</td>
-<td>对应 wx.switchTab 的功能</td>
-</tr>
-<tr>
-<td>reLaunch</td>
-<td>对应 wx.reLaunch 的功能</td>
-</tr>
-<tr>
-<td>navigateBack</td>
-<td>对应 wx.navigateBack 的功能</td>
-</tr>
-</tbody>
-</table>
-<hr>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/26/小程序页面路由/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/23/【每日pmcaff】如何正确引导UGC的内容产生/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bengben">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QinQin&BengBen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/23/【每日pmcaff】如何正确引导UGC的内容产生/" itemprop="url">【每日pmcaff】如何正确引导UGC的内容产生</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-23T16:30:04+08:00">
-                2018-01-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/pmcaff/" itemprop="url" rel="index">
-                    <span itemprop="name">pmcaff</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p><strong>UGC为主导的app，有什么好的办法引导用户自发上传内容?</strong><br>UGC为主导的产品，内容为王，谁能产生更多的优质内容、留住更多的KOL，谁就能在众多app中获得一席之地。那么究竟什么方法可以在成本最低的情况下，引导用户更多的上传内容呢？</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/23/【每日pmcaff】如何正确引导UGC的内容产生/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/07/解决Git-refusing-to-merge-unrelated-histories问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bengben">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QinQin&BengBen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/07/解决Git-refusing-to-merge-unrelated-histories问题/" itemprop="url">解决Git refusing to merge unrelated histories问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T15:59:20+08:00">
-                2017-12-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="http://ov4nwwjdl.bkt.clouddn.com/17-12-7/31184667.jpg" alt=""><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/07/解决Git-refusing-to-merge-unrelated-histories问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/pmcaff热榜阅读计划/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bengben">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QinQin&BengBen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/25/pmcaff热榜阅读计划/" itemprop="url">PMCAFF 热榜阅读计划</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T11:01:49+08:00">
-                2017-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="http://ov4nwwjdl.bkt.clouddn.com/17-8-25/17809462.jpg" alt=""></p>
-<p>PMCAFF每周都有一个热榜,他们会把上周（每周）最火的用户、回答、文章前三甲做成榜单告知大家。我接触pmcaff为2017年年初,在业余时间也偷瞄了部分热榜,感觉受益颇多，或者更能说“原来如此”。很喜欢热榜的真实、热榜的质量，为此制定了每天根据热榜阅读而形成读后感,方便自己整理思绪并记录下阅读。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/25/pmcaff热榜阅读计划/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/23/hexo-配置阅读次数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bengben">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="QinQin&BengBen">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/23/hexo-配置阅读次数/" itemprop="url">Hexo 配置阅读次数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-23T14:44:42+08:00">
-                2017-08-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>   github page 本身属于静态的,因此需要借住第三方平台leancloud,因此文章内容主要介绍结合leancloud进行配置工作。</p>
-<h2 id="Hexo-Next主题阅读次数配置"><a href="#Hexo-Next主题阅读次数配置" class="headerlink" title="Hexo Next主题阅读次数配置"></a>Hexo Next主题阅读次数配置</h2><p>Hexo博客在Next主题中配置访问次数主要有<strong>两个步骤</strong><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/23/hexo-配置阅读次数/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <img class="site-author-image" itemprop="image"
-              src="/uploads/avatar.png"
-              alt="bengben" />
-          
-            <p class="site-author-name" itemprop="name">bengben</p>
-            <p class="site-description motion-element" itemprop="description">QinQin & BengBen</p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-            
-              <a href="/archives/">
-            
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">日志</span>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-11" href="#">Aeroacoustics: Noise Reduction Strategies for Mechanical Systems</a>
+    <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+    <!-- <div><img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXUAAADmCAYAAAAqeBWRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iSWxsdXN0cmF0b3IiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0RBODkxN0RFQ0U1MTFFNDlCRDU4NTc3RjY5REE3QzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0RBODkxN0VFQ0U1MTFFNDlCRDU4NTc3RjY5REE3QzIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDREE4OTE3QkVDRTUxMUU0OUJENTg1NzdGNjlEQTdDMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDREE4OTE3Q0VDRTUxMUU0OUJENTg1NzdGNjlEQTdDMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoLRMCUAAA6ZSURBVHja7N3dVdtIHwfgyZ7cL3u7N3EqeEkFmAoC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" alt=""></div> -->
+    <!-- <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul> -->
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link " onclick="sidebtn(this)" href="#">
+                <span data-feather="file"></span>
+                Wind Turbine
               </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">分类</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Propeller
               </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">14</span>
-                <span class="site-state-item-name">标签</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="file"></span>
+                Jet<span class="sr-only">(current)</span>
               </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Wing & Flag
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Jet</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-secondary active" onclick="caseAction(this)">Case 1: Frequency 𝝎</button>
+              <button class="btn btn-sm btn-outline-secondary" onclick="caseAction(this)">Case 2: Reference Location</button>
+              <button class="btn btn-sm btn-outline-secondary" onclick="caseAction(this)">Case 3: Mach Number</button>
             </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/bengben" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:bengben@hotmail.com" target="_blank" title="E-Mail">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-              </span>
-            
-          
+          </div>
         </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              推荐阅读
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a>
-                </li>
-              
-            </ul>
+        <blockquote class="blockquote text-left">
+          <p class="mb-0">Based on Lighthill’s acoustic analogy, the far field spectral density can be expressed as:
+          </p>
+        </blockquote>
+        <div class="row">
+          <!-- 公式图片 -->
+          <div class="col"><img src="img/jet/jet-case1-formula.png" alt=""></div>
+          <!-- 弹框图片 -->
+          <div class="col">
+            <img style="width:270px;height:100px" src="img/jet/click.png" alt="" data-toggle="modal" data-target="#exampleModal">
           </div>
-        
+        </div>
 
-        
+        <div class="row" style="margin-top:30px;">
+          <!-- <div class=""><img src="img/jet/jet-case1.png" alt=""></div> -->
+          <div class="col">
+            <h4 id="caseTitle" class="text-primary">Case 1: Frequency 𝝎</h4>
+          </div>
+
+        </div>
+        <!-- <div style="width:100%;height:1500px; background-color:goldenrod;"></div> -->
+        <div class="row" style="margin-bottom:30px;">
+          <div class="col-12">
+            <h6 id="caseDesc">The jet is operating at Mj = 0.911 with D = 0.0508m, and the observer location is at 90
+              deg to the jet
+              axis at a distance of 72D.</h6>
+          </div>
+        </div>
+
+        <div id="container" style="width: 60% margin: 0 auto"></div>
+
+        <!-- silder bar -->
+        <div id="sliderCase1Area">
+          <div class="row">
+            <div class="col-1">Frequency</div>
+            <div class="col-11">
+              <input id="sliderCase1" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="26" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+        </div>
+
+        <div id="sliderCase2Area" style="display:none">
+          <div class="row">
+            <div class="col-1">St 50 deg
+            </div>
+            <div class="col-11">
+              <input id="sliderCase21" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="19" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">St 90 deg
+            </div>
+            <div class="col-11">
+              <input id="sliderCase22" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="19" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">St 130 deg
+            </div>
+            <div class="col-11">
+              <input id="sliderCase23" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="19" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+
+        </div>
+
+        <div id="sliderCase3Area" style="display:none">
+          <div class="row">
+            <div class="col-1">St Mj = 0,5
+            </div>
+            <div class="col-11">
+              <input id="sliderCase31" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="19" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">St Mj = 0,7
+            </div>
+            <div class="col-11">
+              <input id="sliderCase32" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="19" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">St Mj = 1,47
+            </div>
+            <div class="col-11">
+              <input id="sliderCase33" type="text" style="width:90%;padding-left: 100px;" data-slider-min="-1"
+                data-slider-max="19" data-slider-step="1" data-slider-value="-1" />
+            </div>
+          </div>
+
+        </div>
 
 
-      </section>
 
-      
-
-      
 
     </div>
-  </aside>
 
-
-        
-      </div>
     </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2017 &mdash; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">bengben</span>
-
-  
-</div>
-
-<!--
-
-  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-  <span class="post-meta-divider">|</span>
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
-
--->
-
-        
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人次
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
+  </div>
   </div>
 
-  
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
-
-
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+  <!-- Modal -->
+  <div class="modal fade" style="top:100px;left:-200px;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <img src="img/jet/jet.png" alt="">
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/bootstrap-slider.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+
+  <!-- icons -->
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
+  <!-- icons end -->
+
+  <script>
+    var sidebtn = function () {
+      console.log(this.text());
+    }
+  </script>
+
+
+
+  <!-- 初始化数据 -->
+  <script>
+    let cases = [{
+        title: 'Case 1: Frequency 𝝎',
+        desc: 'The jet is operating at Mj = 0.911 with D = 0.0508m, and the observer location is at 90 deg to the jetaxis at a distance of 72D.'
+      },
+      {
+        title: 'Case 2: Reference Location',
+        desc: 'The jet is operating at Mj = 1 with D = 0.0508m, and the observer locations are from a distance of 100D, at 50 deg, 90 deg, and 130 deg, respectively. The frequency is expressed in a non-dimension way as the Strouhal number St.'
+      },
+      {
+        title: 'Case 3: Mach Number',
+        desc: 'The jet is operating at Mj = 0,5, Mj = 0,7, and Mj = 1,47, respectively, with D = 0.0508m. And the observer location is from a distance of 100D, at 90 deg. The frequency is expressed in a non-dimension way as the Strouhal number St.'
+      }
+    ]
+    let case1Data = [
+      [2.0883, 36.2500],
+      [2.1941, 39.1300],
+      [2.2935, 41.7900],
+      [2.3929, 44.2500],
+      [2.4954, 46.7100],
+      [2.5979, 49.0600],
+      [2.7004, 51.1600],
+      [2.7997, 53.0900],
+      [2.9022, 54.9800],
+      [2.9982, 56.3400],
+      [3.0974, 57.5000],
+      [3.2062, 58.3500],
+      [3.3052, 58.5600],
+      [3.4010, 58.3100],
+      [3.5000, 57.4400],
+      [3.6084, 55.9900],
+      [3.7072, 54.3900],
+      [3.8093, 52.6300],
+      [3.9049, 50.6600],
+      [4.0036, 48.7400],
+      [4.1056, 46.7700],
+      [4.2140, 44.5400],
+      [4.3127, 42.1100],
+      [4.4082, 39.1500],
+      [4.5067, 35.1000],
+      [4.6082, 29.4300],
+      [4.7094, 21.3700]
+    ];
+    let case21Data = [
+      [-1.9972, 83.5200],
+      [-1.7072, 88.9300],
+      [-1.5304, 92.3000],
+      [-1.3950, 94.4200],
+      [-1.2459, 96.6200],
+      [-1.1077, 98.2700],
+      [-0.9945, 99.6100],
+      [-0.8591, 100.6400],
+      [-0.7127, 101.4300],
+      [-0.5304, 101.9100],
+      [-0.3950, 101.3800],
+      [-0.2238, 100.3000],
+      [-0.0994, 98.9000],
+      [0.0387, 97.1900],
+      [0.2017, 94.6300],
+      [0.3508, 91.9000],
+      [0.4724, 89.3300],
+      [0.5829, 86.8400],
+      [0.6906, 84.4300],
+      [0.8039, 81.8600]
+    ]
+    let case22Data = [
+      [-1.9918, 86.15],
+      [-1.783, 89.94],
+      [-1.5852, 93.57],
+      [-1.4258, 96.12],
+      [-1.2582, 98.67],
+      [-1.0962, 100.76],
+      [-0.9011, 102.78],
+      [-0.7033, 104.33],
+      [-0.5275, 105.27],
+      [-0.3077, 105.67],
+      [-0.1593, 105.3],
+      [-0.0055, 104.61],
+      [0.1401, 103.24],
+      [0.2912, 101.48],
+      [0.4505, 98.96],
+      [0.5604, 96.97],
+      [0.6566, 95.13],
+      [0.739, 93.36],
+      [0.8324, 91.53],
+      [0.9341, 89.38]
+    ]
+    let case23Data = [
+      [-1.9995, 96.59],
+      [-1.8523, 99.41],
+      [-1.6995, 102.24],
+      [-1.5411, 105.06],
+      [-1.3994, 107.41],
+      [-1.2521, 109.61],
+      [-1.1158, 111.57],
+      [-1.0046, 112.82],
+      [-0.8377, 114.24],
+      [-0.7012, 114.63],
+      [-0.5257, 114.24],
+      [-0.3695, 112.82],
+      [-0.2243, 110.47],
+      [-0.0958, 107.49],
+      [0.0272, 104.51],
+      [0.1391, 101.37],
+      [0.2453, 98.55],
+      [0.3795, 95.18],
+      [0.5304, 91.57],
+      [0.6897, 87.8]
+    ]
+    let case31Data = [
+      [-1.9971, 59.03],
+      [-1.8305, 62.11],
+      [-1.6667, 64.78],
+      [-1.5259, 66.57],
+      [-1.3391, 68.92],
+      [-1.1839, 70.63],
+      [-1.0029, 71.94],
+      [-0.8017, 73],
+      [-0.6178, 73.5],
+      [-0.4454, 73.59],
+      [-0.2701, 73.45],
+      [-0.1207, 73.05],
+      [0.0029, 72.34],
+      [0.1638, 71.22],
+      [0.296, 69.78],
+      [0.4195, 68.1],
+      [0.5603, 65.77],
+      [0.6695, 63.76],
+      [0.7759, 62.08],
+      [0.8994, 59.59]
+    ]
+    let case32Data = [
+      [-1.9972, 67.94],
+      [-1.8085, 71.28],
+      [-1.6423, 74.09],
+      [-1.5296, 75.88],
+      [-1.4, 77.74],
+      [-1.262, 79.46],
+      [-1.1014, 81.01],
+      [-0.9268, 82.57],
+      [-0.7465, 83.58],
+      [-0.5859, 84.12],
+      [-0.4028, 84.2],
+      [-0.231, 84.05],
+      [-0.0676, 83.5],
+      [0.0817, 82.41],
+      [0.2056, 81.25],
+      [0.3465, 79.61],
+      [0.4817, 77.9],
+      [0.6, 75.8],
+      [0.7324, 73.54],
+      [0.8817, 71.05]
+    ]
+    let case33Data = [
+      [-1.7775, 90.15],
+      [-1.6205, 92.85],
+      [-1.5001, 95.31],
+      [-1.374, 97.69],
+      [-1.2478, 99.69],
+      [-1.13, 101.46],
+      [-0.9982, 103.54],
+      [-0.8437, 105.31],
+      [-0.6781, 107.31],
+      [-0.5351, 109.77],
+      [-0.4204, 112.62],
+      [-0.2866, 117.46],
+      [-0.1285, 116.38],
+      [-0.0403, 113.23],
+      [0.1348, 111.54],
+      [0.2878, 108.46],
+      [0.4408, 105.23],
+      [0.5937, 102.46],
+      [0.7494, 99.62],
+      [0.8883, 96.62]
+
+    ]
+  </script>
+
+  <!--  case 按钮切换 -->
+  <script>
+    function caseAction(caseBtn) {
+      console.log('case', $(caseBtn).text());
+      let btnText = $(caseBtn).text().trim();
+      if ('Case 1: Frequency 𝝎' === btnText) {
+        console.log('case', "Case 1");
+        $('.btn-outline-secondary').removeClass('active');
+        $('.btn-outline-secondary').eq(0).addClass('active');
+        $('#caseTitle').text(cases[0].title);
+        $('#caseDesc').text(cases[0].desc);
+        $('#sliderCase1Area').show();
+        $('#sliderCase2Area').hide();
+        $('#sliderCase3Area').hide();
+        //设置hightcharts
+        data = [];
+        data21=[];data22=[];data23=[];data31=[];data32=[];data33=[];
+        if (chart.series.length===1) {
+          let s = chart.series[0];
+          chart.series[0] = [];
+          chart.series[0].push(s);
+        }else{
+          console.log('length else',111111);
+          chart.series[1].remove();
+          chart.series[1].remove();
+          chart.series[0].remove();
+          chart.addSeries({
+            data: [],
+            name: 'Frequency',
+            marker:{symbol:'circle',fillColor:'red'},
+          });
+        }
+
+
+        chart.series[0].setData(data);
+        chart.yAxis[0].update({
+          max: 70,
+          min: 20
+        });
+        chart.xAxis[0].update({
+          max: 5,
+          min: 2
+        });
+        
+      
+        // $('#sliderCase1').attr('data-slider-value',-1);
+
+      } else if ('Case 2: Reference Location' === btnText) {
+        console.log('case', "Case 2");
+        $('.btn-outline-secondary').removeClass('active');
+        $('.btn-outline-secondary').eq(1).addClass('active');
+        $('#caseTitle').text(cases[1].title);
+        $('#caseDesc').text(cases[1].desc);
+        $('#sliderCase1Area').hide();
+        $('#sliderCase2Area').show();
+        $('#sliderCase3Area').hide();
+
+        chart.yAxis[0].update({
+          max: 130,
+          min: 80
+        });
+        chart.xAxis[0].update({
+          max: 1,
+          min: -2
+        });
+        chart.series[0].name = '50 deg';
+        data21=[];data22=[];data23=[];data31=[];data32=[];data33=[];
+        if (chart.series.length === 1) {
+          chart.addSeries({
+            data: [],
+            name: '90 deg',
+            marker:{symbol:'circle',fillColor:'#70C1B3'},
+          });
+          chart.addSeries({
+            data: [],
+            name: '130 deg',
+            marker:{symbol:'circle',fillColor:'#247BA0'}
+          });
+
+        }else{
+          chart.series[1].remove();
+          chart.series[1].remove();
+          chart.addSeries({
+            data: [],
+            name: '90 deg',
+            marker:{symbol:'circle',fillColor:'#70C1B3'},
+          });
+          chart.addSeries({
+            data: [],
+            name: '130 deg',
+            marker:{symbol:'circle',fillColor:'#247BA0'}
+          });
+        }
+
+
+      } else if ('Case 3: Mach Number' === btnText) {
+        console.log('case', "Case 3");
+        $('.btn-outline-secondary').removeClass('active');
+        $('.btn-outline-secondary').eq(2).addClass('active');
+        $('#caseTitle').text(cases[2].title);
+        $('#caseDesc').text(cases[2].desc);
+        $('#sliderCase1Area').hide();
+        $('#sliderCase2Area').hide();
+        $('#sliderCase3Area').show();
+
+        
+        chart.yAxis[0].update({
+          max: 120,
+          min: 50
+        });
+        chart.xAxis[0].update({
+          max: 1,
+          min: -2
+        });
+        
+        chart.series[0].name = 'Mj = 0,5';
+        data21=[];data22=[];data23=[];data31=[];data32=[];data33=[];
+        if (chart.series.length === 1) {
+          chart.addSeries({
+            data: [],
+            name: 'Mj = 0,7',
+            marker:{symbol:'circle',fillColor:'#70C1B3'},
+          });
+          chart.addSeries({
+            data: [],
+            name: 'Mj = 1,47',
+            marker:{symbol:'circle',fillColor:'#247BA0'}
+          });
+
+          chart.redraw();
+        }else{
+          chart.series[1].remove();
+          chart.series[1].remove();
+          chart.addSeries({
+            data: [],
+            name: 'Mj = 0,7',
+            marker:{symbol:'circle',fillColor:'#70C1B3'},
+          });
+          chart.addSeries({
+            data: [],
+            name: 'Mj = 1,47',
+            marker:{symbol:'circle',fillColor:'#247BA0'}
+          });
+        }
+
+      }
+    }
+  </script>
+
+
+
+  <!-- 滚动条事件 -->
+  <script>
+    let data = [],
+      data21 = [],
+      data22 = [],
+      data23 = [],
+      data31 = [],
+      data32 = [],
+      data33 = [];
+    $("#sliderCase1").slider();
+    $("#sliderCase21").slider();
+    $("#sliderCase22").slider();
+    $("#sliderCase23").slider();
+    $("#sliderCase31").slider();
+    $("#sliderCase32").slider();
+    $("#sliderCase33").slider();
+
+    $("#sliderCase1").on("slide", function (slideEvt) {
+      if (-1 === slideEvt.value) {
+        data = [];
+        chart.series[0].setData(data);
+      } else {
+        data.push(case1Data[slideEvt.value]);
+        chart.series[0].setData(data);
+        // console.log('sliderCase1,data',data);
+      }
+    });
+
+    $("#sliderCase21").on("slide", function (slideEvt) {
+      console.log('sliderCase21', slideEvt.value)
+      if (-1 === slideEvt.value) {
+        data21 = [];
+        chart.series[0].setData(data21);
+      } else {
+        data21.push(case21Data[slideEvt.value]);
+        chart.series[0].setData(data21);
+        // console.log('sliderCase1,data',data);
+      }
+    });
+
+    $("#sliderCase22").on("slide", function (slideEvt) {
+      if (-1 === slideEvt.value) {
+        data22 = [];
+        chart.series[1].setData(data22);
+      } else {
+        data22.push(case22Data[slideEvt.value]);
+        chart.series[1].setData(data22);
+      }
+    });
+
+    $("#sliderCase23").on("slide", function (slideEvt) {
+      if (-1 === slideEvt.value) {
+        data23 = [];
+        chart.series[2].setData(data23);
+      } else {
+        data23.push(case23Data[slideEvt.value]);
+        chart.series[2].setData(data23);
+      }
+    });
+
+
+    $("#sliderCase31").on("slide", function (slideEvt) {
+      if (-1 === slideEvt.value) {
+        data31 = [];
+        chart.series[0].setData(data31);
+      } else {
+        data31.push(case31Data[slideEvt.value]);
+        chart.series[0].setData(data31);
+      }
+    });
+
+    $("#sliderCase32").on("slide", function (slideEvt) {
+      if (-1 === slideEvt.value) {
+        data32 = [];
+        chart.series[1].setData(data32);
+      } else {
+        data32.push(case32Data[slideEvt.value]);
+        chart.series[1].setData(data32);
+      }
+    });
+
+    $("#sliderCase33").on("slide", function (slideEvt) {
+      if (-1 === slideEvt.value) {
+        data33 = [];
+        chart.series[2].setData(data33);
+      } else {
+        data33.push(case33Data[slideEvt.value]);
+        chart.series[2].setData(data33);
+      }
+    });
+  </script>
+
+  <!-- highcharts -->
+  <script>
+    Highcharts.setOptions({
+      colors: ['#70C1B3', '#247BA0', '#F3FFBD', '#B2DBBF']
+    });
+    var chart = Highcharts.chart('container', {
+      credits: {
+        enabled: false
+      }, //去掉版权
+      chart: {
+        type: 'scatter',
+        zoomType: 'xy'
+      },
+      title: {
+        text: ' '
+      },
+      subtitle: {
+        text: ' '
+      },
+      xAxis: {
+        title: {
+          enabled: true,
+          text: 'Frequency'
+        },
+        startOnTick: true,
+        endOnTick: true,
+        showLastLabel: true,
+        max: 5,
+        min: 2
+      },
+      yAxis: {
+        title: {
+          text: 'SPL/dB'
+        },
+        max: 70,
+        min: 20
+      },
+      legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 100,
+        y: 70,
+        floating: true,
+        // backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+        borderWidth: 1
+      },
+      plotOptions: {
+        scatter: {
+          marker: {
+            radius: 5,
+            fillColor:'#FF1654',
+            states: {
+              hover: {
+                enabled: true,
+                lineColor: 'rgb(100,100,100)'
+              }
+            }
+          },
+          states: {
+            hover: {
+              marker: {
+                enabled: false
+              }
+            }
+          },
+          tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: 'Frequency:{point.x}, SPL/dB:{point.y}'
+          }
+        }
+      },
+      series: [{
+        name: 'Frequency:',
+        color: 'rgba(223, 83, 83, .5)',
+        data: []
+      }]
+    });
+  </script>
 
 </body>
+
 </html>
